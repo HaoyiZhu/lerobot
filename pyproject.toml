@@ -52,7 +52,7 @@ pre-commit = {version = ">=3.7.0", optional = true}
 debugpy = {version = ">=1.8.1", optional = true}
 pytest = {version = ">=8.1.0", optional = true}
 pytest-cov = {version = ">=5.0.0", optional = true}
-datasets = ">=2.19.0"
+datasets = "<4.0"
 imagecodecs = { version = ">=2024.1.1", optional = true }
 av = "== 14.2.0"
 deepdiff = ">=7.0.1"
@@ -68,8 +68,7 @@ pyrender = {git = "https://github.com/mmatl/pyrender.git", markers = "sys_platfo
 hello-robot-stretch-body = {version = ">=0.7.27", markers = "sys_platform == 'linux'", optional = true}
 pyserial = {version = ">=3.5", optional = true}
 jsonlines = ">=4.0.0"
-draccus = {git = "https://github.com/dlwh/draccus.git"} # replace with draccus = ">=0.9.4" when https://github.com/dlwh/draccus/pull/29 is in release
-
+draccus = ">=0.9.4"
 
 [tool.poetry.extras]
 dora = ["gym-dora"]
